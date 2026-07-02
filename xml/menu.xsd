@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:element name="menu">
+		<xs:complexType>
+		
+			<xs:sequence>
+			
+				<xs:element name="pantalla" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+					
+						<xs:sequence>
+				 
+				 			<xs:element name="identificador" minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:attribute name="clave" type="xs:string"  use="required"/>
+									<xs:attribute name="fila" type="xs:int" use="required"/>
+									<xs:attribute name="columna" type="xs:int" use="required"/>
+									<xs:attribute name="dimension" type="xs:int" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							
+							<xs:element name="campos" minOccurs="0" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+									
+										<xs:element name="campo" minOccurs="1" maxOccurs="unbounded">
+											<xs:complexType>
+											
+												<xs:attribute name="nombre" type="xs:string"  use="required"/>
+												<xs:attribute name="fila" type="xs:int" use="required"/>
+												<xs:attribute name="columna" type="xs:int" use="required"/>
+												<xs:attribute name="dimension" type="xs:int" use="required"/>
+										
+											</xs:complexType>
+										</xs:element>
+										
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							
+							
+							
+							<xs:element name="acciones" minOccurs="0" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+									
+										<xs:element name="accion" minOccurs="1" maxOccurs="unbounded">
+											<xs:complexType>
+											
+												<xs:attribute name="nombre" type="xs:string"  use="required"/>
+												<xs:attribute name="clase" type="xs:string" use="required"/>
+										
+											</xs:complexType>
+										</xs:element>
+										
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							
+						
+				 		</xs:sequence>
+					
+						<xs:attribute name="nombre" type="xs:string"  use="required"/>
+						<xs:attribute name="pantallasAcceso" type="xs:string" use="required"/>
+						<xs:attribute name="pantallaSalida" type="xs:string" use="required"/>
+						<xs:attribute name="acceder" type="xs:string" use="required"/>
+						<xs:attribute name="salir" type="xs:string" use="required"/>
+
+					</xs:complexType>
+				</xs:element>
+			
+			
+			</xs:sequence>
+			
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
