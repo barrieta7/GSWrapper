@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="menu.xsd">
+	
+	<pantalla acceder="" salir="" pantallasAcceso="" nombre="" >
+	
+		<identificador columna="" clave="" fila="" dimension=""/>
+		
+		<campos>
+			<campo columna="" fila="" dimension="" nombre=""/>
+			<campo columna="" fila="" dimension="" nombre=""/>
+			<campo columna="" fila="" dimension="" nombre=""/>
+			<campo columna="" fila="" dimension="" nombre=""/>
+		</campos>
+	
+	
+		<acciones>
+			<accion nombre="" clase=""/>
+			<accion nombre="" clase=""/>
+			<accion nombre="" clase=""/>
+		</acciones>
+	
+	</pantalla>
+	
+	<pantalla acceder="" salir="" pantallasAcceso="" nombre="" >
+	
+		<identificador columna="" clave="" fila="" dimension=""/>
+	
+	</pantalla>
+	
+	<pantalla acceder="" salir="" pantallasAcceso="1,2,3" nombre="">
+	
+		<identificador columna="" clave="" fila="" dimension=""/>
+		
+		<campos>
+			<campo columna="" fila="" dimension="" nombre=""/>
+			<campo columna="" fila="" dimension="" nombre=""/>
+		</campos>
+	
+	
+		<acciones>
+			<accion nombre="" clase=""/>
+		</acciones>
+	
+	</pantalla>
+	
+</menu>
+

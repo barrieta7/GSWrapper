@@ -1,0 +1,37 @@
+<!ELEMENT menu (pantalla+)>
+
+<!ELEMENT pantalla (id, campos, acciones)>
+<!ATTLIST pantalla
+ nombre CDATA #REQUIRED
+ pantallasAcceso CDATA #REQUIRED
+ pantallaSalida CDATA #REQUIRED
+ dialogo CDATA #IMPLIED
+ acceder CDATA #REQUIRED
+ salir CDATA #REQUIRED
+>
+
+<!ATTLIST id
+clave CDATA #REQUIRED
+fila CDATA #REQUIRED
+columna CDATA #REQUIRED
+dimension CDATA #REQUIRED
+>
+
+<!ELEMENT campos (campo+)>
+<!ATTLIST campo
+nombre CDATA #REQUIRED
+fila CDATA #REQUIRED
+columna CDATA #REQUIRED
+dimension CDATA #REQUIRED
+>
+
+<!ELEMENT acciones (accion+)>
+<!ATTLIST accion
+nombre CDATA #REQUIRED
+clase CDATA #REQUIRED
+>
+
+
+
+
+

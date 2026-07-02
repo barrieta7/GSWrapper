@@ -1,0 +1,39 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+
+<!DOCTYPE pantallas SYSTEM "menu.dtd">
+
+<menu>
+
+	<pantalla acceder="" salir="" nombre="" pantallasAcceso="" pantallaSalida="">
+
+		<campos>
+			<campo columna="" dimension="" fila="" nombre="" />
+			<campo columna="" dimension="" fila="" nombre="" />
+			<campo columna="" dimension="" fila="" nombre="" />
+		</campos>
+
+		<acciones>
+			<accion nombre="" clase="" />
+			<accion nombre="" clase="" />
+			<accion nombre="" clase="" />
+		</acciones>
+
+	</pantalla>
+	
+	<pantalla acceder="" salir="" nombre="" pantallasAcceso="", pantallaSalida="">
+
+		<campos>
+			<campo columna="" dimension="" fila="" nombre="" />
+			<campo columna="" dimension="" fila="" nombre="" />
+			<campo columna="" dimension="" fila="" nombre="" />
+		</campos>
+
+		<acciones>
+			<accion nombre="" clase="" />
+			<accion nombre="" clase="" />
+			<accion nombre="" clase="" />
+		</acciones>
+
+	</pantalla>
+
+</menu>
